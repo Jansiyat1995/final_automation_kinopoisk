@@ -1,5 +1,10 @@
-*allure
-*pytest.ini
+.env
+.venv/
+.pytest_cache/
+__pycache__/
+allure-results/
+
+
 # Created by https://www.toptal.com/developers/gitignore/api/windows,python,visualstudiocode,test,git
 # Edit at https://www.toptal.com/developers/gitignore?templates=windows,python,visualstudiocode,test,git
 
