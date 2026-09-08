@@ -55,14 +55,7 @@ class AuthPage:
 
     @allure.step("Выбрать «Войти по логину»")
     def click_login_by_login(self):
-        login_by_login = self.__wait.until(
-            EC.element_to_be_clickable(
-                (
-                    By.CSS_SELECTOR,
-                    '[data-testid="menu-option-switchToLogin"]'
-                )
-            )
-        )
+        login_by_login = self.__wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR,'[data-testid="menu-option-switchToLogin"]')))
         login_by_login.click()
 
     @allure.step("Ввести логин или email")

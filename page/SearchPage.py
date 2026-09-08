@@ -120,13 +120,13 @@ class SearchPage:
     @allure.step("Получить название фильма «Холоп 2»")
     def get_holop_2_title(self) -> str:
         title = self.__wait.until(
-        EC.visibility_of_element_located(
-            (
+            EC.visibility_of_element_located((
                 By.CSS_SELECTOR,
                 'span[data-tid="75209b22"]'
-            )
-        )
-    )
+                )
+                )
+                )
+
         return title.text
 
     @allure.step("Проверить наличие фильма")
